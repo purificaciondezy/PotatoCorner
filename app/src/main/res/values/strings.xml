@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PotatoCorner</string>
+    <color name="green">#149144</color>
+    <color name="yellow">#DEC242</color>
+    <color name="olive">#0F1409</color>
+    <color name="beige">#F6F8F3</color>
+
+</resources>
