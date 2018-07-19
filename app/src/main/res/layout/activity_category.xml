@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnBackCategory"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -33,11 +33,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/btnDrinks" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnFriesCombos"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
@@ -51,7 +50,7 @@
         android:background="@color/beige"/>
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnChickenCombos"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
@@ -59,23 +58,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/btnFriesCombos"
         app:srcCompat="@drawable/chiccombos"
         android:background="@color/beige"/>
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btnBakedPotatoes"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/btnChickenCombos"
         app:srcCompat="@drawable/bakedp"
         android:background="@color/beige"/>
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btnDrinks"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
@@ -83,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/btnBakedPotatoes"
         app:srcCompat="@drawable/drinks"
         android:background="@color/beige"/>
 
