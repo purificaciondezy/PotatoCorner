@@ -177,15 +177,15 @@
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/yellow"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="phone"
+        android:textColor="@color/beige"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        android:background="@color/yellow"
-        android:textColor="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView9"
@@ -208,14 +208,14 @@
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/yellow"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailSubject"
+        android:textColor="@color/beige"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        android:background="@color/yellow"
-        android:textColor="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView10"
@@ -238,14 +238,14 @@
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/yellow"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:textColor="@color/beige"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        android:background="@color/yellow"
-        android:textColor="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
         android:id="@+id/button2"
