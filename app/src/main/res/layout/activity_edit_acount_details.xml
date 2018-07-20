@@ -35,7 +35,7 @@
         android:textColor="@color/olive"/>
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/txtContactNumberEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -59,11 +59,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/txtContactNumberEdit"
         android:textColor="@color/green"/>
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/txtEmailEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -88,11 +88,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailEdit"
         android:textColor="@color/green"/>
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/txtPasswordEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -117,17 +117,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEdit"
         android:textColor="@color/green"/>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnSaveEdit"
         android:layout_width="118dp"
         android:layout_height="49dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:background="@color/green"
+        android:onClick="saveedit"
         android:text="SAVE"
         android:textColor="@color/beige"
         android:textSize="18sp"
@@ -136,20 +137,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="101dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
-        android:background="@color/beige"
-        android:text="BACK"
-        android:textColor="@color/olive"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
 </android.support.constraint.ConstraintLayout>

@@ -45,43 +45,47 @@
         android:textColor="@color/beige"/>
 
     <ImageButton
-        android:id="@+id/imageButton21"
+        android:id="@+id/imgbtnWater"
         android:layout_width="105dp"
         android:layout_height="81dp"
         android:layout_marginEnd="88dp"
         android:layout_marginTop="12dp"
+        android:onClick="bottledwater"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
         app:srcCompat="@drawable/dbwater" />
 
     <ImageButton
-        android:id="@+id/imageButton22"
+        android:id="@+id/imgbtnIcedTea"
         android:layout_width="100dp"
         android:layout_height="84dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="12dp"
+        android:onClick="icedtea"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
         app:srcCompat="@drawable/dicetea" />
 
     <ImageButton
-        android:id="@+id/imageButton23"
+        android:id="@+id/imgbtnLemonade"
         android:layout_width="102dp"
         android:layout_height="79dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="12dp"
+        android:onClick="lemonade"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton22"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnIcedTea"
         app:srcCompat="@drawable/dlemon" />
 
     <ImageButton
-        android:id="@+id/imageButton24"
+        android:id="@+id/imgbtnSoda"
         android:layout_width="104dp"
         android:layout_height="84dp"
         android:layout_marginEnd="88dp"
         android:layout_marginTop="16dp"
+        android:onClick="soda"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton21"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnWater"
         app:srcCompat="@drawable/dsoda" />
 
     <TextView
@@ -100,54 +104,58 @@
         android:textColor="@color/yellow"/>
 
     <ImageButton
-        android:id="@+id/imageButton25"
+        android:id="@+id/imgbtnLargeDrink"
         android:layout_width="95dp"
         android:layout_height="85dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:onClick="largedrink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toEndOf="@+id/imageButton26"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnMediumDrink"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:srcCompat="@drawable/dsizel" />
 
     <ImageButton
-        android:id="@+id/imageButton26"
+        android:id="@+id/imgbtnMediumDrink"
         android:layout_width="95dp"
         android:layout_height="85dp"
         android:layout_marginTop="16dp"
+        android:onClick="mediumdrink"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:srcCompat="@drawable/dsizem"
         tools:layout_editor_absoluteX="158dp" />
 
     <ImageButton
-        android:id="@+id/imageButton27"
+        android:id="@+id/imgbtnSmallDrink"
         android:layout_width="95dp"
         android:layout_height="85dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton26"
+        android:onClick="smalldrink"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnMediumDrink"
         app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:srcCompat="@drawable/dsizes" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/btnAddToCartDrinks"
         android:layout_width="171dp"
         android:layout_height="61dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
+        android:background="@color/olive"
+        android:onClick="addtocartdrinks"
         android:text="ADD TO CART"
+        android:textColor="@color/beige"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton26"
-        android:textColor="@color/beige"
-        android:background="@color/olive"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnMediumDrink" />
 
 </android.support.constraint.ConstraintLayout>

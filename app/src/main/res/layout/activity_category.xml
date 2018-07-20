@@ -19,71 +19,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <Button
-        android:id="@+id/btnBackCategory"
-        android:layout_width="92dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/olive"
-        android:text="Back"
-        android:textColor="@color/beige"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDrinks" />
-
     <ImageButton
-        android:id="@+id/btnFriesCombos"
+        android:id="@+id/imgbtnFriesCombos"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
+        android:background="@color/beige"
+        android:onClick="friescombos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/friescombos"
-        android:background="@color/beige"/>
+        app:srcCompat="@drawable/friescombos" />
 
     <ImageButton
-        android:id="@+id/btnChickenCombos"
+        android:id="@+id/imgbtnChickenCombos"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/beige"
+        android:onClick="chickencombos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFriesCombos"
-        app:srcCompat="@drawable/chiccombos"
-        android:background="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnFriesCombos"
+        app:srcCompat="@drawable/chiccombos" />
 
     <ImageButton
-        android:id="@+id/btnBakedPotatoes"
+        android:id="@+id/imgbtnBakedPotatoes"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="4dp"
+        android:background="@color/beige"
+        android:onClick="bakedpotatoes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnChickenCombos"
-        app:srcCompat="@drawable/bakedp"
-        android:background="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnChickenCombos"
+        app:srcCompat="@drawable/bakedp" />
 
     <ImageButton
-        android:id="@+id/btnDrinks"
+        android:id="@+id/imgbtnDrinks"
         android:layout_width="376dp"
         android:layout_height="95dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/beige"
+        android:onClick="drinks"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBakedPotatoes"
-        app:srcCompat="@drawable/drinks"
-        android:background="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnBakedPotatoes"
+        app:srcCompat="@drawable/drinks" />
 
 </android.support.constraint.ConstraintLayout>

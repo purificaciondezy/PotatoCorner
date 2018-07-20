@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/txtUsername"
+        android:id="@+id/txtUsernameLogin"
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
@@ -55,10 +55,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsernameLogin" />
 
     <EditText
-        android:id="@+id/txtPassword"
+        android:id="@+id/txtPasswordLogin"
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
@@ -81,12 +81,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:background="@color/beige"
+        android:onClick="login"
         android:text="LOG IN"
+        android:textColor="@color/olive"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
-        android:textColor="@color/olive"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -102,13 +103,14 @@
         />
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnRegisterLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
         android:background="@color/green"
+        android:onClick="registerLogin"
         android:text="Don't have an account yet?"
         android:textColor="@color/olive"
         android:textSize="24sp"

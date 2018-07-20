@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spnAccountType"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -76,10 +76,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spnAccountType" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtUsernameRegistration"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -108,10 +108,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsernameRegistration" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtFirstName"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -138,10 +138,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txtLastName"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -169,10 +169,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txtContactNumber"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -200,10 +200,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContactNumber" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/txtEmail"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -230,10 +230,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/txtPasswordRegistration"
         android:layout_width="220dp"
         android:layout_height="35dp"
         android:layout_marginEnd="8dp"
@@ -248,18 +248,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRegister"
         android:layout_width="165dp"
         android:layout_height="46dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:background="@color/beige"
+        android:onClick="register"
         android:text="REGISTER"
         android:textColor="@color/olive"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordRegistration" />
 
 </android.support.constraint.ConstraintLayout>
