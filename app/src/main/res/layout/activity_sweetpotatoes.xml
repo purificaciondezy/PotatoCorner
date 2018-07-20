@@ -21,18 +21,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/olive"/>
 
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="BACK"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/beige"
-        android:background="@color/olive"/>
-
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="295dp"
@@ -46,59 +34,63 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/btnPlainPotatoes"
         android:layout_width="278dp"
         android:layout_height="87dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/olive"
+        android:onClick="plainpotatoes"
         android:text="PLAIN"
+        android:textColor="@color/green"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        android:textColor="@color/green"
-        android:background="@color/olive"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/btnSourCreamPotatoes"
         android:layout_width="278dp"
         android:layout_height="86dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/beige"
+        android:onClick="sourcreampotatoes"
         android:text="SOUR CREAM"
+        android:textColor="@color/olive"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button17"
-        android:textColor="@color/olive"
-        android:background="@color/beige"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnPlainPotatoes" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/btnChiliCheesePotatoes"
         android:layout_width="278dp"
         android:layout_height="86dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
+        android:background="@color/green"
+        android:onClick="chilicheesepotatoes"
         android:text="CHILI CHEESE"
+        android:textColor="@color/beige"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button18"
-        android:textColor="@color/beige"
-        android:background="@color/green"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnSourCreamPotatoes" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/btnAddToCartPotatoes"
         android:layout_width="170dp"
         android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:background="@color/olive"
+        android:onClick="addtocartpotatoes"
         android:text="ADD TO CART"
         android:textAlignment="center"
         android:textColor="@color/beige"
@@ -107,5 +99,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
+        app:layout_constraintTop_toBottomOf="@+id/btnChiliCheesePotatoes" />
 </android.support.constraint.ConstraintLayout>

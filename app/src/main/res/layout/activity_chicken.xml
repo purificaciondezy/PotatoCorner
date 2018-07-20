@@ -7,17 +7,6 @@
     tools:context=".chicken"
     android:background="@color/green">
 
-    <Button
-        android:id="@+id/btnBackChicken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="back"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="257dp"

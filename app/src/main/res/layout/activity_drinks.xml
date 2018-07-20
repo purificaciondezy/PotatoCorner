@@ -7,18 +7,6 @@
     tools:context=".drinks"
     android:background="@color/green">
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="65dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="BACK"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/beige"
-        android:background="@color/olive"/>
-
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="264dp"
