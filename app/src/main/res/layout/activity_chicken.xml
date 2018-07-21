@@ -73,7 +73,25 @@
         app:srcCompat="@drawable/chickid" />
 
     <Button
-        android:id="@+id/btnAddToCartChicken"
+        android:id="@+id/btnCheckOutChicken"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/olive"
+        android:onClick="addtocartchicken"
+        android:text="check out"
+        android:textColor="@color/beige"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnWingsCombo" />
+
+    <Button
+        android:id="@+id/btnAddToCartChicken2"
         android:layout_width="169dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -86,7 +104,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgbtnWingsCombo" />
 

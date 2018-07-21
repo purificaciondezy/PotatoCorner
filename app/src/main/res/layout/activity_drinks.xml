@@ -130,7 +130,25 @@
         app:srcCompat="@drawable/dsizes" />
 
     <Button
-        android:id="@+id/btnAddToCartDrinks"
+        android:id="@+id/btnCheckOutDrinks"
+        android:layout_width="171dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/olive"
+        android:onClick="addtocartdrinks"
+        android:text="CHECK OUT"
+        android:textColor="@color/beige"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnMediumDrink" />
+
+    <Button
+        android:id="@+id/btnAddToCartDrinks2"
         android:layout_width="171dp"
         android:layout_height="61dp"
         android:layout_marginEnd="8dp"
@@ -143,6 +161,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgbtnMediumDrink" />
 
