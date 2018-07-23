@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -14,25 +15,30 @@ import java.util.HashMap;
 
 public class registration extends AppCompatActivity
 {
-     Spinner spnAccountType;
-     EditText txtUsernameRegistration;
-     EditText txtPasswordRegistration;
-     EditText txtFirstName;
-     EditText txtLastName;
-     EditText txtContactNumber;
-     EditText txtEmail;
+    Spinner spnAccountType;
+    EditText txtUsernameRegistration;
+    EditText txtPasswordRegistration;
+    EditText txtFirstName;
+    EditText txtLastName;
+    EditText txtContactNumber;
+    EditText txtEmail;
 
-     Button btnRegister;
-
+    Button btnRegister;
 
     DBTools dbTools = new DBTools(this);
+
+    String[] accounts = {"Customer", "Admin"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
         spnAccountType = (Spinner) findViewById(R.id.spnAccountType);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, accounts);
+        spnAccountType.setAdapter(adapter);
+
         txtUsernameRegistration = (EditText) findViewById(R.id.txtUsernameRegistration);
         txtPasswordRegistration  = (EditText) findViewById(R.id.txtPasswordRegistration);
         txtFirstName  = (EditText) findViewById(R.id.txtFirstName);
@@ -41,7 +47,6 @@ public class registration extends AppCompatActivity
         txtEmail  = (EditText) findViewById(R.id.txtEmail);
 
         btnRegister = (Button) findViewById(R.id.btnRegister);
-
     }
 
     private void ClearAllFields()
