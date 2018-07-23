@@ -24,7 +24,6 @@ public class registration extends AppCompatActivity
 
      Button btnRegister;
 
-
     DBTools dbTools = new DBTools(this);
 
     @Override
@@ -32,6 +31,9 @@ public class registration extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+        getSupportActionBar().hide();
+
+
         spnAccountType = (Spinner) findViewById(R.id.spnAccountType);
         txtUsernameRegistration = (EditText) findViewById(R.id.txtUsernameRegistration);
         txtPasswordRegistration  = (EditText) findViewById(R.id.txtPasswordRegistration);
