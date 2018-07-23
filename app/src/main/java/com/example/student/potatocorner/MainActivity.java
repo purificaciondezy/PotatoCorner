@@ -37,32 +37,32 @@ public class MainActivity extends AppCompatActivity {
         txtPasswordLogin = (EditText) findViewById(R.id.txtPasswordLogin);
     }
 
+
     private class ButtonEventHandler implements View.OnClickListener {
 
         @Override
         public void onClick(View v) {
             switch(v.getId()){
                 case R.id.btnLogin:
-                    verifyAndLogInUser();
+                    verifyLogInUser();
                     break;
                 case R.id.btnRegisterLogin:
-                    registration();
+                    register();
                     break;
             }
         }
     }
-
-    private void registration(){
+    private void register(){
         Intent intent = new Intent(getApplicationContext(),registration.class);
         startActivity(intent);
     }
 
-    private void verifyAndLogInUser(){
+    private void verifyLogInUser(){
 
-        String uname = txtUsernameLogin.getText().toString();
+        String username = txtUsernameLogin.getText().toString();
         String password = txtPasswordLogin.getText().toString();
 
-        HashMap<String, String> result = dbTools.getUserByUserNamePassword(uname, password);
+        HashMap<String, String> result = dbTools.getUserByUserNamePassword(username, password);
 
         if (result.isEmpty()){
             txtUsernameLogin.setText("");
@@ -71,13 +71,13 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             Toast.makeText(this, "Login successfull", Toast.LENGTH_LONG ).show();
-            Intent intent = new Intent(getApplicationContext(), Category.class);
+            Intent intent2 = new Intent(MainActivity.this, Category.class);
             Bundle b = new Bundle();
             b.putString("UserName", result.get("UserName"));
             b.putInt("UserID", Integer.valueOf(result.get("UserID")));
-            b.putString("PhoneNo", result.get("PhoneNo"));
-            intent.putExtras(b);
-            startActivity(intent);
+
+            intent2.putExtras(b);
+            startActivity(intent2);
             finish();
         }
     }
@@ -110,12 +110,7 @@ public class MainActivity extends AppCompatActivity {
             return super.onKeyDown(keyCode, event);
         }
     }
-    public void onClick(View v)
-    {
-        Intent intent = new Intent(MainActivity.this, registration.class);
-        startActivity(intent);
-        finish();
-    }
+
 
 
 }
