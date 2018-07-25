@@ -59,13 +59,20 @@ public class registration extends AppCompatActivity
         txtEmail.setText("");
     }
 
+    public void register(View v)
+    {
+        Intent intent = new Intent(registration.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+/*
     private void SaveUserDetails(){
         HashMap<String, String> queryValues = new HashMap<String, String>();
         queryValues.put("UserName", txtUsernameRegistration.getText().toString());
         queryValues.put("Password", txtPasswordRegistration.getText().toString());
-        queryValues.put("Company", txtFirstName.getText().toString());
-        queryValues.put("Position", txtLastName.getText().toString());
-        queryValues.put("Address", txtContactNumber.getText().toString());
+//        queryValues.put("Company", txtFirstName.getText().toString());
+//        queryValues.put("Position", txtLastName.getText().toString());
+//        queryValues.put("Address", txtContactNumber.getText().toString());
         queryValues.put("PhoneNo", txtEmail.getText().toString());
         int success = (int)dbTools.insertCustomer(queryValues);
 
@@ -87,6 +94,7 @@ public class registration extends AppCompatActivity
                 return;
             }
             else
+                SaveUserDetails();
                 Toast.makeText(getApplicationContext(), "LOG IN TO CONTINUE", Toast.LENGTH_LONG).show();
         }
         Intent intent = new Intent(registration.this, MainActivity.class);
@@ -98,7 +106,7 @@ public class registration extends AppCompatActivity
     {
         return ((txtUsernameRegistration.getText().toString().length() != 0) && (txtPasswordRegistration.getText().toString().length() != 0) && (txtFirstName.getText().toString().length() != 0)&& (txtLastName.getText().toString().length() != 0)&& (txtContactNumber.getText().toString().length() != 0)&& (txtEmail.getText().toString().length() != 0));
     }
-
+*/
     //Back/Exit
     @Override
     public void onBackPressed()
@@ -108,4 +116,6 @@ public class registration extends AppCompatActivity
         finish();
     }
 }
+
+
 

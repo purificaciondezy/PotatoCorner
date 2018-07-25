@@ -81,7 +81,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:background="@color/beige"
-        android:onClick="onClick"
+        android:onClick="login"
         android:text="LOG IN"
         android:textColor="@color/olive"
         android:textSize="18sp"

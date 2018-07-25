@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin;
     Button btnRegisterLogin;
 
+    //String username, password;
+
     DBTools dbTools = new DBTools(this);
 
     @Override
@@ -30,14 +32,37 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnRegisterLogin = (Button) findViewById(R.id.btnRegisterLogin);
 
-        btnLogin.setOnClickListener(new ButtonEventHandler());
-        btnRegisterLogin.setOnClickListener(new ButtonEventHandler());
+      //  btnLogin.setOnClickListener(new ButtonEventHandler());
+        // btnRegisterLogin.setOnClickListener(new ButtonEventHandler());
 
         txtUsernameLogin = (EditText) findViewById(R.id.txtUsernameLogin);
         txtPasswordLogin = (EditText) findViewById(R.id.txtPasswordLogin);
+
+       // username = txtUsernameLogin.getText().toString();
+       // password = txtPasswordLogin.getText().toString();
     }
 
+    public void login(View v)
+    {
+        if(txtUsernameLogin.getText().toString().equals("Dez") && txtPasswordLogin.getText().toString().equals("12345"))
+        {
+            Intent intent = new Intent(MainActivity.this, UserView.class);
+            startActivity(intent);
+            finish();
+        }
+        else{
+            Toast.makeText(MainActivity.this,"Invalid Login", Toast.LENGTH_LONG).show();
+        }
+    }
 
+    public void registerLogin(View v)
+    {
+        Intent intent = new Intent(MainActivity.this, registration.class);
+        startActivity(intent);
+        finish();
+    }
+
+/*
     private class ButtonEventHandler implements View.OnClickListener {
 
         @Override
@@ -111,6 +136,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+*/
 
 }

@@ -256,7 +256,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:background="@color/beige"
-        android:onClick="onClick"
+        android:onClick="register"
         android:text="REGISTER"
         android:textColor="@color/olive"
         android:textSize="18sp"

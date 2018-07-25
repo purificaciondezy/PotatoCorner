@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -68,13 +69,16 @@ public class DBTools extends SQLiteOpenHelper
         HashMap<String, String> customerMap = new HashMap<String, String>();
         SQLiteDatabase database = this.getReadableDatabase();
 
-        String selectQuery = "SELECT * FROM tblUsers WHERE username  = '" + username + "' AND password = '" + password + "'";
+        String selectQuery = "SELECT * FROM tblUsers WHERE UsernameRegistration  = '" + username + "' AND PasswordRegistration = '" + password + "'";
         Cursor cursor = database.rawQuery(selectQuery, null);
         if(cursor.moveToFirst()){
             do{
                 customerMap.put("UserID", cursor.getString(0));
                 customerMap.put("UserName",cursor.getString(1));
-                customerMap.put("PhoneNo", cursor.getString(6));
+                customerMap.put("PhoneNo", cursor.getString(2));
+                Log.e("UserID",cursor.getString(0));
+                Log.e("UserID",cursor.getString(1));
+                Log.e("UserID",cursor.getString(2));
 
             }while(cursor.moveToNext());
         }
